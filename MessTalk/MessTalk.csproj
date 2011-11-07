@@ -38,7 +38,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="INIFileParser">
-      <HintPath>packages\ini-parser.1.7.0\lib\INIFileParser.dll</HintPath>
+      <HintPath>..\packages\ini-parser.1.7.0\lib\INIFileParser.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,9 +50,13 @@
     </Compile>
     <Compile Include="ConventionBasedMessageModelReader.cs" />
     <Compile Include="FragmentPreprocessor.cs" />
+    <Compile Include="KeyConventions\DefaultKeyDataConventionFinder.cs" />
+    <Compile Include="KeyConventions\EnumKeyDataConventionFinder.cs" />
     <Compile Include="KeyConventions\FragmentRefConvention.cs" />
+    <Compile Include="KeyConventions\IKeyDataConventionFinder.cs" />
     <Compile Include="SectionConventions\CommandConvention.cs" />
     <Compile Include="SectionConventions\DataTypeConvention.cs" />
+    <Compile Include="SectionConventions\DefaultSectionDataConventionFinder.cs" />
     <Compile Include="SectionConventions\EnumConvention.cs" />
     <Compile Include="KeyConventions\EnumMemberConvention.cs" />
     <Compile Include="SectionConventions\EventConvention.cs" />
@@ -62,8 +66,10 @@
     <Compile Include="SectionConventions\FragmentConvention.cs" />
     <Compile Include="SectionConventions\ISectionDataConvention.cs" />
     <Compile Include="KeyConventions\PropertyConvention.cs" />
+    <Compile Include="SectionConventions\ISectionDataConventionFinder.cs" />
     <Compile Include="SectionConventions\RequestConvention.cs" />
     <Compile Include="SectionConventions\ResponseConvention.cs" />
+    <Compile Include="SectionConventions\SectionDataInstance.cs" />
     <Compile Include="SectionConventions\SubscriptionConvention.cs" />
     <Compile Include="IMessageModelReader.cs" />
     <Compile Include="MessageModel.cs" />
