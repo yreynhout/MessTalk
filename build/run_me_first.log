@@ -1,0 +1,20 @@
+Opbouwen gestart 12/10/2014 16:39:46.
+__________________________________________________
+Project D:\GitHub\MessTalk\build\run_me_first.proj (standaarddoelen):
+
+Doel Run:
+    D:\GitHub\MessTalk\build\..\.nuget\nuget.exe update -self
+    Checking for updates from https://www.nuget.org/api/v2/.
+    Currently running NuGet.exe 2.8.2.
+    NuGet.exe is up to date.
+    Doel RestorePackages:
+        D:\GitHub\MessTalk\build\..\.nuget\nuget.exe install D:\GitHub\MessTalk\build\..\build\packages.config -o "D:\GitHub\MessTalk\build\..\build\packages"
+        All packages listed in packages.config are already installed.
+        D:\GitHub\MessTalk\build\..\.nuget\nuget.exe install D:\GitHub\MessTalk\build\..\src\MessTalk\packages.config -o "D:\GitHub\MessTalk\build\..\src\packages"
+        All packages listed in packages.config are already installed.
+
+Opbouwen voltooid.
+    0 waarschuwing(en)
+    0 fout(en)
+
+Verstreken tijd 00:00:16.82

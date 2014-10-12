@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>MessTalk</id>
+    <version>0.0.0</version>
+    <authors>Yves Reynhout</authors>
+    <owners>Yves Reynhout</owners>
+    <title>MessTalk</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://raw.github.com/yreynhout/MessTalk/master/LICENSE.txt</licenseUrl>
+    <description>MessTalk transforms a yaml message contract file using a mustache template into code.</description>
+    <projectUrl>https://github.com/yreynhout/MessTalk</projectUrl>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2014, BitTacklr. All rights reserved.</copyright>
+    <tags>eventsourcing DDDesign</tags>
+  </metadata>
+  <files>
+    <file src="output\csharp\MessTalk.exe" target="tools\MessTalk.exe" />
+    <file src="output\csharp\MessTalk.exe.config" target="tools\MessTalk.exe.config" />
+    <file src="output\csharp\MessTalk.pdb" target="tools\MessTalk.pdb" />
+    <file src="output\csharp\mustache-sharp.dll" target="tools\mustache-sharp.dll" />
+    <file src="output\csharp\PowerArgs.dll" target="tools\PowerArgs.dll" />
+    <file src="output\csharp\YamlDotNet.dll" target="tools\YamlDotNet.dll" />
+  </files>
+</package>
