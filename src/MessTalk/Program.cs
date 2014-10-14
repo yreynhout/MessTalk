@@ -29,6 +29,11 @@ namespace MessTalk
                 Console.WriteLine(ArgUsage.GenerateUsageFromTemplate<ProgramArguments>());
                 Environment.Exit(1);
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Environment.Exit(-1);
+            }
         }
 
         private static string TransformModel(NamedModel model, string template)
