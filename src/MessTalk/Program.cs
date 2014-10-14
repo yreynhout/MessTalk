@@ -21,11 +21,13 @@ namespace MessTalk
                 var model = ParseModel(parsed.Input);
                 var output = TransformModel(model, parsed.Template);
                 File.WriteAllText(parsed.Output, output);
+                Environment.Exit(0);
             }
             catch (ArgException ex)
             {
                 Console.WriteLine(ex.Message);
                 Console.WriteLine(ArgUsage.GenerateUsageFromTemplate<ProgramArguments>());
+                Environment.Exit(1);
             }
         }
 
@@ -58,7 +60,7 @@ namespace MessTalk
             public string Input { get; set; }
             [ArgRequired, ArgDescription("The mustache file containing the code to be generated based on the named model.")]
             public string Template { get; set; }
-            [ArgDescription("The output file that contains the generated code.")]
+            [ArgRequired, ArgDescription("The output file that contains the generated code.")]
             public string Output { get; set; }
         }
     }
